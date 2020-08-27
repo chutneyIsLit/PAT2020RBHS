@@ -1,0 +1,7 @@
+make sign up look nice and improve the error checking (dont forget to make it set your user as a geust if youo proceed to homepage from sign up,don't do it while you're testing tho)
+view profile page is currently the game page
+a user on a cbx is able to make their own option
+your messages on your cart add shoudl be way better same as sign up implement dynamic objects for this
+
+stuff that you edited for admin:
+log in button

@@ -1,0 +1,470 @@
+object frmHomePage: TfrmHomePage
+  Left = 0
+  Top = 0
+  Caption = 'Home Page'
+  ClientHeight = 506
+  ClientWidth = 1004
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  OnKeyDown = FormKeyDown
+  OnKeyPress = FormKeyPress
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pgcHomePage: TPageControl
+    Left = 8
+    Top = 4
+    Width = 988
+    Height = 505
+    ActivePage = tbsSignUp
+    TabOrder = 0
+    object tbsLogIn: TTabSheet
+      Caption = 'Log in page'
+      OnShow = tbsLogInShow
+      object Label1: TLabel
+        Left = 326
+        Top = 243
+        Width = 53
+        Height = 13
+        Caption = 'Password :'
+      end
+      object Label2: TLabel
+        Left = 324
+        Top = 187
+        Width = 55
+        Height = 13
+        Caption = 'Username :'
+      end
+      object edtUsernameLogInPage: TEdit
+        Left = 446
+        Top = 184
+        Width = 145
+        Height = 21
+        TabOrder = 0
+      end
+      object edtPasswordLogInPage: TEdit
+        Left = 446
+        Top = 240
+        Width = 145
+        Height = 21
+        TabOrder = 1
+      end
+      object btnLogInLogInPage: TButton
+        Left = 326
+        Top = 304
+        Width = 113
+        Height = 25
+        Caption = 'Log in'
+        TabOrder = 2
+        OnClick = btnLogInLogInPageClick
+      end
+      object Panel1: TPanel
+        Left = 326
+        Top = 112
+        Width = 265
+        Height = 41
+        Caption = 'Log In Page'
+        TabOrder = 3
+      end
+      object btnSignUp: TButton
+        Left = 478
+        Top = 304
+        Width = 113
+        Height = 25
+        Caption = 'Sign up'
+        TabOrder = 4
+        OnClick = btnSignUpClick
+      end
+      object Button1: TButton
+        Left = 398
+        Top = 352
+        Width = 113
+        Height = 25
+        Caption = 'Continue as geust'
+        TabOrder = 5
+        OnClick = Button1Click
+      end
+    end
+    object tbsHomePage: TTabSheet
+      Caption = 'Home Page'
+      ImageIndex = 1
+      object lblNameOfUserHomePage: TLabel
+        Left = 520
+        Top = 96
+        Width = 7
+        Height = 25
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -21
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+      end
+      object memCartOnHomePage: TMemo
+        Left = 136
+        Top = 120
+        Width = 185
+        Height = 297
+        ReadOnly = True
+        TabOrder = 0
+      end
+      object Panel2: TPanel
+        Left = 136
+        Top = 40
+        Width = 185
+        Height = 41
+        Caption = 'Cart'
+        TabOrder = 1
+      end
+      object Panel3: TPanel
+        Left = 462
+        Top = 192
+        Width = 361
+        Height = 225
+        TabOrder = 2
+        object btnGoToCartFromHomePage: TButton
+          Left = 40
+          Top = 112
+          Width = 105
+          Height = 24
+          Caption = 'Go to cart'
+          TabOrder = 0
+          OnClick = btnGoToCartFromHomePageClick
+        end
+        object btnGoToProductsFromHomePage: TButton
+          Left = 40
+          Top = 32
+          Width = 105
+          Height = 25
+          Caption = 'Go to products'
+          TabOrder = 1
+          OnClick = btnGoToProductsFromHomePageClick
+        end
+        object btnGoToCardsFromHomePage: TButton
+          Left = 208
+          Top = 31
+          Width = 105
+          Height = 25
+          Caption = 'Go to cards'
+          TabOrder = 2
+          OnClick = btnGoToCardsFromHomePageClick
+        end
+        object btnGoToSignUpFromHomePage: TButton
+          Left = 208
+          Top = 111
+          Width = 105
+          Height = 25
+          Caption = 'Go to Sign Up'
+          TabOrder = 3
+          OnClick = btnGoToSignUpFromHomePageClick
+        end
+        object btnSignOutHomePage: TButton
+          Left = 208
+          Top = 175
+          Width = 105
+          Height = 25
+          Caption = 'Sign out'
+          TabOrder = 4
+          OnClick = btnSignOutHomePageClick
+        end
+        object btnViewProfileHomePage: TButton
+          Left = 40
+          Top = 176
+          Width = 105
+          Height = 25
+          Caption = 'View Profile'
+          TabOrder = 5
+          OnClick = btnViewProfileHomePageClick
+        end
+      end
+    end
+    object tbsSignUp: TTabSheet
+      Caption = 'Sign up'
+      ImageIndex = 3
+      object Label3: TLabel
+        Left = 202
+        Top = 274
+        Width = 124
+        Height = 23
+        Caption = 'Contact Details'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+      end
+      object Panel4: TPanel
+        Left = 144
+        Top = 57
+        Width = 249
+        Height = 193
+        TabOrder = 0
+        object ledtUserNameSignUp: TLabeledEdit
+          Left = 64
+          Top = 36
+          Width = 121
+          Height = 21
+          EditLabel.Width = 58
+          EditLabel.Height = 16
+          EditLabel.Caption = 'Username'
+          EditLabel.Font.Charset = DEFAULT_CHARSET
+          EditLabel.Font.Color = clWindowText
+          EditLabel.Font.Height = -13
+          EditLabel.Font.Name = 'Tahoma'
+          EditLabel.Font.Style = []
+          EditLabel.ParentFont = False
+          TabOrder = 0
+        end
+        object ledtPasswordSignUp: TLabeledEdit
+          Left = 64
+          Top = 92
+          Width = 121
+          Height = 21
+          EditLabel.Width = 55
+          EditLabel.Height = 16
+          EditLabel.Caption = 'Password'
+          EditLabel.Font.Charset = DEFAULT_CHARSET
+          EditLabel.Font.Color = clWindowText
+          EditLabel.Font.Height = -13
+          EditLabel.Font.Name = 'Tahoma'
+          EditLabel.Font.Style = []
+          EditLabel.ParentFont = False
+          TabOrder = 1
+        end
+        object ledtConfirmPasswordSignUp: TLabeledEdit
+          Left = 64
+          Top = 140
+          Width = 121
+          Height = 21
+          EditLabel.Width = 104
+          EditLabel.Height = 16
+          EditLabel.Caption = 'Confirm Password'
+          EditLabel.Font.Charset = DEFAULT_CHARSET
+          EditLabel.Font.Color = clWindowText
+          EditLabel.Font.Height = -13
+          EditLabel.Font.Name = 'Tahoma'
+          EditLabel.Font.Style = []
+          EditLabel.ParentFont = False
+          TabOrder = 2
+        end
+      end
+      object Panel5: TPanel
+        Left = 48
+        Top = 319
+        Width = 417
+        Height = 137
+        TabOrder = 1
+        object ledtEmailSignUp: TLabeledEdit
+          Left = 40
+          Top = 84
+          Width = 161
+          Height = 21
+          EditLabel.Width = 31
+          EditLabel.Height = 16
+          EditLabel.Caption = 'Email'
+          EditLabel.Font.Charset = DEFAULT_CHARSET
+          EditLabel.Font.Color = clWindowText
+          EditLabel.Font.Height = -13
+          EditLabel.Font.Name = 'Tahoma'
+          EditLabel.Font.Style = []
+          EditLabel.ParentFont = False
+          EditLabel.Transparent = True
+          TabOrder = 0
+        end
+        object ledtPhoneSignUp: TLabeledEdit
+          Left = 233
+          Top = 84
+          Width = 161
+          Height = 21
+          EditLabel.Width = 145
+          EditLabel.Height = 16
+          EditLabel.Caption = 'Phone Number (Optional)'
+          EditLabel.Font.Charset = DEFAULT_CHARSET
+          EditLabel.Font.Color = clWindowText
+          EditLabel.Font.Height = -13
+          EditLabel.Font.Name = 'Tahoma'
+          EditLabel.Font.Style = []
+          EditLabel.ParentFont = False
+          EditLabel.Transparent = True
+          TabOrder = 1
+        end
+        object ledtFirtNameSignUp: TLabeledEdit
+          Left = 40
+          Top = 36
+          Width = 161
+          Height = 21
+          EditLabel.Width = 62
+          EditLabel.Height = 16
+          EditLabel.Caption = 'First Name'
+          EditLabel.Font.Charset = DEFAULT_CHARSET
+          EditLabel.Font.Color = clWindowText
+          EditLabel.Font.Height = -13
+          EditLabel.Font.Name = 'Tahoma'
+          EditLabel.Font.Style = []
+          EditLabel.ParentFont = False
+          EditLabel.Transparent = True
+          TabOrder = 2
+        end
+        object ledtLastNameSignUp: TLabeledEdit
+          Left = 232
+          Top = 36
+          Width = 161
+          Height = 21
+          EditLabel.Width = 60
+          EditLabel.Height = 16
+          EditLabel.Caption = 'Last Name'
+          EditLabel.Font.Charset = DEFAULT_CHARSET
+          EditLabel.Font.Color = clWindowText
+          EditLabel.Font.Height = -13
+          EditLabel.Font.Name = 'Tahoma'
+          EditLabel.Font.Style = []
+          EditLabel.ParentFont = False
+          EditLabel.Transparent = True
+          TabOrder = 3
+        end
+      end
+      object btnSubmitSignUp: TButton
+        Left = 543
+        Top = 365
+        Width = 113
+        Height = 48
+        Caption = 'Submit Sign Up'
+        TabOrder = 2
+        OnClick = btnSubmitSignUpClick
+      end
+      object btnGoToHomePageFromSignUP: TButton
+        Left = 824
+        Top = 195
+        Width = 113
+        Height = 25
+        Caption = 'Go to Home page '
+        TabOrder = 3
+        OnClick = btnGoToHomePageFromSignUPClick
+      end
+      object btnGoToLogInFromSignUp: TButton
+        Left = 824
+        Top = 129
+        Width = 113
+        Height = 25
+        Caption = 'Go to Log in'
+        TabOrder = 4
+        OnClick = btnGoToLogInFromSignUpClick
+      end
+      object memComunicateErrorsSignUp: TMemo
+        Left = 480
+        Top = 57
+        Width = 249
+        Height = 228
+        ReadOnly = True
+        TabOrder = 5
+      end
+    end
+    object tbsCart: TTabSheet
+      Caption = 'Cart'
+      ImageIndex = 4
+      object lblNameOfUserCartPage: TLabel
+        Left = 122
+        Top = 69
+        Width = 79
+        Height = 23
+        Caption = 'Your Cart'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+      end
+      object lblCurrentBalence: TLabel
+        Left = 304
+        Top = 390
+        Width = 5
+        Height = 19
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+      end
+      object memCartOnCartPage: TMemo
+        Left = 96
+        Top = 120
+        Width = 185
+        Height = 289
+        ReadOnly = True
+        TabOrder = 0
+      end
+      object btnClearCart: TButton
+        Left = 416
+        Top = 136
+        Width = 121
+        Height = 25
+        Caption = 'Clear Cart'
+        TabOrder = 1
+        OnClick = btnClearCartClick
+      end
+      object btnBuyFromStore: TButton
+        Left = 416
+        Top = 200
+        Width = 121
+        Height = 25
+        Caption = 'Buy from Store'
+        TabOrder = 2
+        OnClick = btnBuyFromStoreClick
+      end
+      object Panel6: TPanel
+        Left = 696
+        Top = 101
+        Width = 193
+        Height = 236
+        TabOrder = 3
+        object Button3: TButton
+          Left = 40
+          Top = 99
+          Width = 105
+          Height = 25
+          Caption = 'Go to products'
+          TabOrder = 0
+          OnClick = btnGoToProductsFromHomePageClick
+        end
+        object btnGoToCardsFromCart: TButton
+          Left = 40
+          Top = 168
+          Width = 105
+          Height = 25
+          Caption = 'Go to cards'
+          TabOrder = 1
+          OnClick = btnGoToCardsFromCartClick
+        end
+        object btnGoToHomeFromCart: TButton
+          Left = 40
+          Top = 35
+          Width = 105
+          Height = 25
+          Caption = 'Go to Home'
+          TabOrder = 2
+          OnClick = btnGoToHomeFromCartClick
+        end
+      end
+    end
+    object tbsGamePage: TTabSheet
+      Caption = 'Game Page'
+      ImageIndex = 4
+      object shpBall: TShape
+        Left = 392
+        Top = 192
+        Width = 65
+        Height = 65
+        DragCursor = crHandPoint
+        Shape = stCircle
+      end
+    end
+  end
+end

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/07/02 18:46:21.000.536,=C:\Users\chest\Delphi\Unit1.pas</Transaction>
+    <Transaction>2020/07/02 19:19:14.000.543,C:\Users\chest\Documents\Delphi\IT PAT 2020\PAT GUI\frmMainCardUserInterface_u.dfm=C:\Users\chest\Delphi\Unit1.dfm</Transaction>
+    <Transaction>2020/07/02 19:19:14.000.543,C:\Users\chest\Documents\Delphi\IT PAT 2020\PAT GUI\frmMainCardUserInterface_u.pas=C:\Users\chest\Delphi\Unit1.pas</Transaction>
+    <Transaction>2020/07/02 19:19:54.000.453,C:\Users\chest\Documents\Delphi\IT PAT 2020\PAT GUI\frmMainCardUserInterface_p.dproj=C:\Users\chest\Delphi\Project1.dproj</Transaction>
+    <Transaction>2020/07/13 21:39:19.000.039,=C:\Users\chest\Documents\Delphi\IT PAT 2020\PAT GUI\Unit2.pas</Transaction>
+    <Transaction>2020/07/13 21:49:01.000.206,C:\Users\chest\Documents\Delphi\IT PAT 2020\PAT GUI\Unit2.dfm=C:\Users\chest\Documents\Delphi\IT PAT 2020\PAT GUI\frmHomePageInterface_u.dfm</Transaction>
+    <Transaction>2020/07/13 21:49:01.000.206,C:\Users\chest\Documents\Delphi\IT PAT 2020\PAT GUI\Unit2.pas=C:\Users\chest\Documents\Delphi\IT PAT 2020\PAT GUI\frmHomePageInterface_u.pas</Transaction>
+    <Transaction>2020/07/21 14:44:30.000.971,=C:\Users\chest\Documents\Delphi\IT PAT 2020\PAT\Unit1.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="frmHomePageInterface_u.pas"/>
+    <File Path="frmHomePageInterface_u.dfm"/>
+    <File Path="frmMainCardUserInterface_u.pas"/>
+    <File Path="frmMainCardUserInterface_u.dfm"/>
+    <File Path="dbDataModule_d.pas"/>
+    <File Path="dbDataModule_d.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

@@ -1,0 +1,16 @@
+program frmMainCardUserInterface_p;
+
+uses
+  Vcl.Forms,
+  frmMainCardUserInterface_u in 'frmMainCardUserInterface_u.pas' {frmCardPage},
+  frmHomePageInterface_u in 'frmHomePageInterface_u.pas' {frmHomePage};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmCardPage, frmCardPage);
+  Application.CreateForm(TfrmHomePage, frmHomePage);
+  Application.Run;
+end.

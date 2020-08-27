@@ -1,0 +1,46 @@
+object dmModule: TdmModule
+  OldCreateOrder = False
+  Height = 371
+  Width = 870
+  object conCards: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\chest\Docu' +
+      'ments\Delphi\IT PAT 2020\PAT\MtgCards.mdb;Persist Security Info=' +
+      'False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 88
+    Top = 80
+  end
+  object qryCards: TADOQuery
+    Connection = conCards
+    Parameters = <>
+    Left = 88
+    Top = 144
+  end
+  object dsrCards: TDataSource
+    DataSet = qryCards
+    Left = 88
+    Top = 200
+  end
+  object conUser: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\chest\Docu' +
+      'ments\Delphi\IT PAT 2020\PAT\usersAndTheirRecords.mdb;Persist Se' +
+      'curity Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 224
+    Top = 80
+  end
+  object qryUser: TADOQuery
+    Connection = conUser
+    Parameters = <>
+    Left = 224
+    Top = 144
+  end
+end
